@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 bg-gradient-to-br from-blue-100 via-sky-50 to-white font-body text-slate-900;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply border border-kr-900/15 bg-white/80 shadow-[0_20px_45px_rgba(6,53,104,0.12)] backdrop-blur;
+  }
+
+  .brand-chip {
+    @apply inline-block rounded-full bg-gradient-to-r from-kr-900 to-kr-700 px-3 py-1 text-[12px] font-display font-bold tracking-[0.08em] text-white;
+  }
+
+  .ghost-btn {
+    @apply rounded-xl border border-kr-700/20 bg-white/70 px-4 py-2 font-display font-bold text-kr-900;
+  }
+
+  .primary-btn {
+    @apply rounded-xl bg-gradient-to-r from-kr-700 to-kr-500 px-5 py-3 font-display font-bold text-white shadow-[0_12px_28px_rgba(11,77,148,0.35)];
+  }
+}
